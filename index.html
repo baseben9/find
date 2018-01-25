@@ -28,7 +28,7 @@ a game about searching
         var lon = position.coords.longitude;
         var actlat = 41.4377559
         var actlon = -81.3285362
-        var dist = Math.round((Math.abs(lat - actlat) + Math.abs(lon - actlon)) * 10000);
+        var dist = Math.round((Math.abs(lat - actlat) + (Math.abs(lon - actlon)/2)) * 10000);
         x.innerHTML = "DISTANCE:" + dist; 
         if (dist == 0) {
         x.innerHTML = "YOU WIN!!! <a href='https://goo.gl/forms/xdrpGTsmBf3sOzs13'>CLICK to verify</a>"
@@ -36,6 +36,7 @@ a game about searching
       }
 setInterval(getLocation, 50)
     </script>
+    <iframe WIDTH="300" HEIGHT="400" title="FIND" src="https://shoutbox.widget.me/start.html?uid=l2h2b4vl" frameborder="0" scrolling="auto"></iframe><script src="https://shoutbox.widget.me/v1.js">
 WINNERS:
   </body>
 
