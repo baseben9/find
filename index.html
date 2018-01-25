@@ -26,8 +26,8 @@ a game about searching
       function showPosition(position) {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
-        var actlat = 41.4377559
-        var actlon = -81.3285362
+        var actlat = 41.430211
+        var actlon = -81.391530
         var dist = Math.round((Math.abs(lat - actlat) + (Math.abs(lon - actlon)/2)) * 10000);
         x.innerHTML = "DISTANCE:" + dist; 
         if (dist == 0) {
