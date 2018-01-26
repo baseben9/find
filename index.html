@@ -8,10 +8,14 @@
 <h3>
 a game about searching
 </h3>
-
-    <p id="demo"></p>
+Instructions:
+    On your phone walk into downtown chagrin and attempt to find the hidden location
+    <h1><p id="demo"></p></h1>
 
     <script>
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
+ window.alert("Hey this game is for only mobile devices. Log on to the site on your phone to play."
+}
       var x = document.getElementById("demo");
       function getLocation() {
         if (navigator.geolocation) {
