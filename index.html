@@ -8,7 +8,7 @@
 a game about searching
 </h3>
 Instructions:
-    On your mobile device, walk into downtown chagrin and attempt to find the hidden location
+    On your mobile device, walk into downtown and attempt to find the hidden location
     <h1><p id="demo"></p></h1>
 
     <script>
@@ -31,7 +31,7 @@ Instructions:
         var dist = Math.round((Math.abs(lat - actlat) + (Math.abs(lon - actlon)/2)) * 10000);
         x.innerHTML = "DISTANCE:" + dist; 
         if (dist == 0) {
-        x.innerHTML = "YOU WIN!!! <a href='https://goo.gl/forms/xdrpGTsmBf3sOzs13'>CLICK to verify</a>"
+        x.innerHTML = "Congrats on finding the correct location (triangle park) <a href='https://goo.gl/forms/xdrpGTsmBf3sOzs13'>CLICK to verify</a>"
         }
       }
 setInterval(getLocation, 50)
