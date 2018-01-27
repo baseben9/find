@@ -29,7 +29,7 @@ A game by baseben9
         var actlat = 41.430211
         var actlon = -81.391530
         var dist = Math.round((Math.abs(lat - actlat) + (Math.abs(lon - actlon)/2)) * 10000);
-        x.innerHTML = "<br><br><br>[" + dist + "]"; 
+        x.innerHTML = "<br><br>" + dist; 
         if (dist == 0) {
         x.innerHTML = "Congrats on finding the correct location (triangle park) <a href='https://goo.gl/forms/xdrpGTsmBf3sOzs13'>CLICK to verify</a>"
         }
