@@ -1,6 +1,6 @@
 <html>
   <title>Find</title>
-  <body style="color:magenta;font-family:Consolas,monospace;background-image:url('tumblr_oz9asfFYCW1vh6d22o7_400.gif') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;"
+  <body style="background-color:blue;color:coral;font-family:Consolas,monospace"
    <h1>
    find
    </h1>
@@ -9,7 +9,7 @@ A game by baseben9
 </h3>
 <u>Instructions:</u><br>
     On your mobile device, walk into downtown and attempt to find the hidden location
-    <h1><p id="demo"></p></h1>
+    <h1><div id="demo" style="background-color:gold; width: 128px; height: 128px; border-radius: 64px; border: 2px solid orange;"></div></h1>
 
     <script>
       var x = document.getElementById("demo");
@@ -29,7 +29,7 @@ A game by baseben9
         var actlat = 41.430211
         var actlon = -81.391530
         var dist = Math.round((Math.abs(lat - actlat) + (Math.abs(lon - actlon)/2)) * 10000);
-        x.innerHTML = "DISTANCE:" + dist; 
+        x.innerHTML = "[" + dist + "]"; 
         if (dist == 0) {
         x.innerHTML = "Congrats on finding the correct location (triangle park) <a href='https://goo.gl/forms/xdrpGTsmBf3sOzs13'>CLICK to verify</a>"
         }
